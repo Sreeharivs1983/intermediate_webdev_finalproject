@@ -3,9 +3,8 @@ const calculateSimpleInterest = (principal, rate, time) => {
   };
   
   const calculateTotalPayableAmount = (principal, interestAmount) => {
-    return principal - interestAmount;  // ❌ keep wrong for now
+    return principal + interestAmount;  // ✅ correct
   };
-
   const calculate = () => {
     let p = Number(document.getElementById("principal").value);
     let r = Number(document.getElementById("rate").value);
